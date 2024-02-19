@@ -1,5 +1,5 @@
 
-import os, funcionesCamper, funcionesRuta, funcionesMatricula
+import os, funcionesCamper, funcionesRuta, funcionesMatricula, funcionesReportes
 
 def menuCoordinador():
 
@@ -25,7 +25,36 @@ def menuCoordinador():
                     funcionesRuta.crearModulos()
                 if opc == 4:
                     funcionesMatricula.crearGruposMatriculas()
+                if opc == 5:
+                    
                 if opc == 6:
+                    break
+        except ValueError:
+            print()
+
+def menuCoordinador():
+
+    menu=["Ver Campers Incritos","Ver Campers Aprobados","Ver Trainers Trabajando","Salir"]
+    while(True):
+        os.system('cls')
+        print(""""
+        ..............................
+                .:CAMPUSLANDS:.
+        ..........COORDINADOR..........
+        
+            """)
+        print("".join([f"{i+1}. {val}\n" for i,val in enumerate(menu)]))
+        try:
+            opc=int(input())
+            if(opc<=len(menu) and opc>0):
+                print(">>")
+                if opc == 1:
+                    funcionesReportes.verCampersIncritos()
+                if opc == 2:
+                    funcionesReportes.verCampersAprobados()
+                if opc == 3:
+                    funcionesReportes.verTrainers()
+                if opc == 4:
                     break
         except ValueError:
             print()

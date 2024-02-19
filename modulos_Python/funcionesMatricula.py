@@ -49,7 +49,7 @@ def verSalonesDisponibles():
 
 def verCampersSinGrupo():
     campers = list(manejoDatos.cargarDatos("campersAprobadosBD.json"))
-
+    num = 0
     print("")
     print(".....Campers a Matricular.....")
     print("")
@@ -59,8 +59,15 @@ def verCampersSinGrupo():
         if val["estado"] == "Aprobado":
             print("-> " + "Identificacion " + " : " +val["id"])
             print("-> " + "Nombre " + " : " +val["nombres"])
-
+        else:
+            num = num + 1
+    
+    if num == len(campers):
+        return False
+    else:
+        return True
     print("")
+
 
 def verRuta(rutaSelec):
     rutas = list(manejoDatos.cargarDatos("rutas.json"))
@@ -81,6 +88,22 @@ def verRuta(rutaSelec):
                         print("    ->"  + " " + str(k))
 
     print("")
+
+def obtenerModulosRuta(rutaSelec):
+    rutas = list(manejoDatos.cargarDatos("rutas.json"))
+
+    diccionario = {}
+
+    for val in rutas:
+        if val["nombreRuta"] == rutaSelec:
+            for j in val.keys():
+                if isinstance(val[j], str):
+                    diccionario[val[j]] = ""
+                else:
+                    for k in val[j]:
+                        diccionario[k] = ""
+
+    return diccionario
 
 
 
@@ -171,25 +194,27 @@ def crearGruposMatriculas():
             print("")
 
     while True:
-        verCampersSinGrupo()
+        vacio = verCampersSinGrupo()
         print("")
         camper = input("Por favor ingrese el id del camper para asignar a este grupo: ")
-        idCamper.append(camper)
-        
 
-        if verificarExistenciaCampers("campersAprobadosBD.json", camper):
+        if verificarExistenciaCampers("campersAprobadosBD.json", camper) and vacio == True:
 
             campers = list(manejoDatos.cargarDatos("campersAprobadosBD.json"))
             for val in campers:
                 if val["id"] == camper and val["estado"] == "Aprobado":
                     val["estado"] = "Matriculado"
+                    val["notas"] = obtenerModulosRuta(nombreRuta)
                     manejoDatos.guardarDatos(campers, "campersAprobadosBD.json")
-                    
             opc = input("\n¿Desea matricular otro camper a este grupo? Si(Y) No(N): ")
             if opc == "Y":
                 input("Presione enter para continuar: ")
             else:
                 break
+
+        elif vacio == False:
+            input("No hay campers sin grupo. Presione enter para continuar. ")
+            break
         else:
             print("")
             print("Error. Alguno de los modulos ingresados no se encuentran en la base de datos")
@@ -201,7 +226,8 @@ def crearGruposMatriculas():
         "ruta":nombreRuta,
         "trainer":nombreTrainer,
         "salon":[nombreSalon,horaInicio],
-        "campers":idCamper
+        "campers":camper,
+        
 
     }
     rutas.append(nuevoGrupo)

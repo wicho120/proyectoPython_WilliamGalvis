@@ -13,7 +13,7 @@ def crearCamper():
     
 
     camperNuevo = {"id":identificacion, "nombres":nombres, "apellidos": apellidos, 
-                   "direccion": direccion, "acudiente":acudiente, "numero celular":numCelular, "estado":"Proceso Ingreso", "riesgo":"No"}
+                   "direccion": direccion, "acudiente":acudiente, "numero celular":numCelular, "estado":"Proceso Ingreso", "notas":[]}
     
     campers.append(camperNuevo)
     manejoDatos.guardarDatos(campers, "campersRegistradosBD.json")
@@ -64,12 +64,3 @@ def aprobarCamper():
             print("")
             input("Presione enter para continuar ")
             salir = 1
-
-        
-
-            
-        
-
-
-
- 

@@ -7,7 +7,19 @@
         "acudiente": "William Galvis",
         "numero celular": "3218881008",
         "estado": "Matriculado",
-        "riesgo": "No"
+        "notas": {
+            "as": "",
+            "Introduccion": "",
+            "PseInt": "",
+            "Python": "",
+            "HTML": "",
+            "CSS": "",
+            "Bootstrap": "",
+            "Java": "",
+            "MongoDb": "",
+            "Mysql": "",
+            "NetCore": ""
+        }
     },
     {
         "id": "1005259793",
@@ -17,7 +29,19 @@
         "acudiente": "Claudia Flores",
         "numero celular": "3108703592",
         "estado": "Matriculado",
-        "riesgo": "No"
+        "notas": {
+            "as": "",
+            "Introduccion": "",
+            "PseInt": "",
+            "Python": "",
+            "HTML": "",
+            "CSS": "",
+            "Bootstrap": "",
+            "Java": "",
+            "MongoDb": "",
+            "Mysql": "",
+            "NetCore": ""
+        }
     },
     {
         "id": "1099218170",
@@ -26,7 +50,7 @@
         "direccion": "dffsdf",
         "acudiente": "eliana",
         "numero celular": "3223225465",
-        "estado": "Matriculado",
-        "riesgo": "No"
+        "estado": "Aprobado",
+        "notas": []
     }
 ]
