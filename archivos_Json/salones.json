@@ -1,0 +1,74 @@
+[
+    {
+        "estado": "libre",
+        "nombre": "Apollo",
+        "horaInicio": "6:00 am",
+        "horaFinal": "10:00 am"
+    },
+    {
+        "estado": "libre",
+        "nombre": "Apollo",
+        "horaInicio": "10:00 am",
+        "horaFinal": "1:00 pm"
+    },
+    {
+        "estado": "libre",
+        "nombre": "Apollo",
+        "horaInicio": "2:00 pm",
+        "horaFinal": "6:00 pm"
+    },
+    {
+        "estado": "libre",
+        "nombre": "Apollo",
+        "horaInicio": "6:15 pm",
+        "horaFinal": "10:00 pm"
+    },
+    {
+        "estado": "libre",
+        "nombre": "Sputnik",
+        "horaInicio": "6:00 am",
+        "horaFinal": "10:00 am"
+    },
+    {
+        "estado": "libre",
+        "nombre": "Sputnik",
+        "horaInicio": "10:00 am",
+        "horaFinal": "1:00 pm"
+    },
+    {
+        "estado": "libre",
+        "nombre": "Sputnik",
+        "horaInicio": "2:00 pm",
+        "horaFinal": "6:00 pm"
+    },
+    {
+        "estado": "libre",
+        "nombre": "Sputnik",
+        "horaInicio": "6:15 pm",
+        "horaFinal": "10:00 pm"
+    },
+    {
+        "estado": "libre",
+        "nombre": "Artemis",
+        "horaInicio": "6:00 am",
+        "horaFinal": "10:00 am"
+    },
+    {
+        "estado": "ocupado",
+        "nombre": "Artemis",
+        "horaInicio": "10:00 am",
+        "horaFinal": "1:00 pm"
+    },
+    {
+        "estado": "ocupado",
+        "nombre": "Artemis",
+        "horaInicio": "2:00 pm",
+        "horaFinal": "6:00 pm"
+    },
+    {
+        "estado": "ocupado",
+        "nombre": "Artemis",
+        "horaInicio": "6:15 pm",
+        "horaFinal": "10:00 pm"
+    }
+]

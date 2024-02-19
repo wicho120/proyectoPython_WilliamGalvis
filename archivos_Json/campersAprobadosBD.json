@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1096063546",
+        "nombres": "William Galvis",
+        "apellidos": "Cardenas",
+        "direccion": "av. 6 # 14-26",
+        "acudiente": "William Galvis",
+        "numero celular": "3218881008",
+        "estado": "Matriculado",
+        "riesgo": "No"
+    },
+    {
+        "id": "1005259793",
+        "nombres": "Juan David",
+        "apellidos": "Sanches Flores",
+        "direccion": "cra. 21 #36-82",
+        "acudiente": "Claudia Flores",
+        "numero celular": "3108703592",
+        "estado": "Matriculado",
+        "riesgo": "No"
+    },
+    {
+        "id": "1099218170",
+        "nombres": "Veronica",
+        "apellidos": "Ruis Bautista",
+        "direccion": "dffsdf",
+        "acudiente": "eliana",
+        "numero celular": "3223225465",
+        "estado": "Matriculado",
+        "riesgo": "No"
+    }
+]

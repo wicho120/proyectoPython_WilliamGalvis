@@ -1,0 +1,29 @@
+[
+    {
+        "fundamentos": [
+            "Introduccion",
+            "PseInt",
+            "Python"
+        ],
+        "progWeb": [
+            "HTML",
+            "CSS",
+            "Bootstrap"
+        ],
+        "progFormal": [
+            "Java",
+            "C#",
+            "JavaScript"
+        ],
+        "baseDatos": [
+            "Mysql",
+            "Postgresql",
+            "MongoDb"
+        ],
+        "backend": [
+            "SpringBoot",
+            "NetCore",
+            "NodeJS y Express"
+        ]
+    }
+]

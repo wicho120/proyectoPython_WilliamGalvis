@@ -1,0 +1,78 @@
+[
+    {
+        "nombreRuta": "Java",
+        "fundamentos": [
+            "Introduccion",
+            "PseInt",
+            "Python"
+        ],
+        "progWeb": [
+            "HTML",
+            "CSS",
+            "Bootstrap"
+        ],
+        "progFormal": "Java",
+        "baseDatos": [
+            "Mysql",
+            "Postgresql"
+        ],
+        "backend": "SpringBoot"
+    },
+    {
+        "nombreRuta": "NetCore",
+        "fundamentos": [
+            "Introduccion",
+            "PseInt",
+            "Python"
+        ],
+        "progWeb": [
+            "HTML",
+            "CSS",
+            "Bootstrap"
+        ],
+        "progFormal": "C#",
+        "baseDatos": [
+            "Mysql",
+            "MongoDb"
+        ],
+        "backend": "NetCore"
+    },
+    {
+        "nombreRuta": "NodeJS",
+        "fundamentos": [
+            "Introduccion",
+            "PseInt",
+            "Python"
+        ],
+        "progWeb": [
+            "HTML",
+            "CSS",
+            "Bootstrap"
+        ],
+        "progFormal": "JavaScript",
+        "baseDatos": [
+            "MongoDb",
+            "Mysql"
+        ],
+        "backend": "NodeJs y Express"
+    },
+    {
+        "nombreRuta": "as",
+        "fundamentos": [
+            "Introduccion",
+            "PseInt",
+            "Python"
+        ],
+        "progWeb": [
+            "HTML",
+            "CSS",
+            "Bootstrap"
+        ],
+        "progFormal": "Java",
+        "baseDatos": [
+            "MongoDb",
+            "Mysql"
+        ],
+        "backend": "NetCore"
+    }
+]
